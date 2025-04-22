@@ -9,7 +9,7 @@ function GitHubIconLink({repoUrl}:{repoUrl:string;}) {
       href= { repoUrl }
       target="_blank"
       rel="noopener noreferrer"
-      className="text-gray-500 hover:text-black transition-colors text-3xl ml-4 mt-2"
+      className="text-gray-500 hover:text-black transition-colors text-2xl ml-4"
       aria-label="GitHub Repository"
     >
       <FaGithub />
@@ -30,6 +30,7 @@ function Component({
   return(
       
       <div className='relative mt-6 group/card1'>
+        
         <Link
         href={cardUrl}
         target="_blank"
@@ -45,7 +46,7 @@ function Component({
         />
 
         <div
-          className="fixed inset-0 top-14 z-10 pointer-events-none opacity-0 group-hover/card1:opacity-50 transition-opacity duration-800"
+          className="fixed inset-0 top-0 z-10 pointer-events-none opacity-0 group-hover/card:opacity-70 transition-opacity duration-300"
           style={{
             backgroundImage: `url(${bg_image})`,
             backgroundSize: "cover",
@@ -53,12 +54,15 @@ function Component({
           }}
         />
         </Link>
+        <div className="absolute left-0 transform -rotate-90 origin-bottom-left -my-7">
+          使用技術 : {tech}
+        </div>
       <div className='flex px-4  mt-4  flex-col space-y-2 max-w-[250px]'>
         <div className="flex items-center justify-between">
-          <h3 className="font-medium">{explain}</h3>
+          <h3 className="font-medium py-3">{explain}</h3>
           <GitHubIconLink repoUrl={repoUrl} />
         </div>
-        <h1 className="font-shippori-mincho">使用技術 : {tech}</h1>
+        
       </div>
     </div>
   );
@@ -72,7 +76,9 @@ export default function Page() {
       <h1 className="px-4 text-2xl">Works Page</h1>
       <p className="mt-4 px-4 flex">Allow me to present the projects I have created to date.</p>
 
-      <div className="flex flex-row flex-wrap gap-6 my-4 mx-4">
+      <div className="flex flex-row flex-wrap gap-6 my-10 mx-4 justify-center  space-x-15">
+
+
         <Component 
         cardUrl = "https://sudoku-two-mocha.vercel.app/"
         thumb = "/images/sudoku_pic.png"
@@ -80,6 +86,33 @@ export default function Page() {
         explain = "数独ゲーム"
         repoUrl="https://github.com/humandebri/Sudoku"
         tech = "React"
+        />
+
+        <Component 
+        cardUrl = "https://github.com/humandebri/novel_evaluation"
+        thumb = "/images/kakuyomu_pic.png"
+        bg_image = "/images/kakuyomu_image.png"
+        explain = "web小説評価システム"
+        repoUrl="https://github.com/humandebri/novel_evaluation"
+        tech = "Python,LLM"
+        />
+
+        <Component 
+        cardUrl = "https://nextjs-dashboard-j1v4lkjp4-hudes-projects-f6d8e97d.vercel.app/"
+        thumb = "/images/nextjs_pic.png"
+        bg_image = "/images/nextjs_image.png"
+        explain = "Nextjs Dashboard"
+        repoUrl="https://github.com/humandebri/nextjs-dashboard"
+        tech = "Nextjs,PostgreSQL"
+        />
+
+        <Component 
+        cardUrl = "https://github.com/humandebri/novel_evaluation"
+        thumb = "/images/kakuyomu_pic.png"
+        bg_image = "/images/kakuyomu_image.png"
+        explain = "Web小説評価システム"
+        repoUrl="https://github.com/humandebri/novel_evaluation"
+        tech = "Python,LLM"
         />
 
         <Component 

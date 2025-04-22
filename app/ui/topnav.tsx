@@ -26,7 +26,7 @@ export default function TopNav() {
   return (
 
     <div className="w-full bg-gray-100 shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
-      <div className="mx-auto h-14 max-w-6xl">
+      <div className="mx-auto h-12 max-w-6xl">
         <ul className="relative mx-12 flex h-full flex-row items-center justify-between text-[16px] font-medium sm:text-[18px]">
 
         {links.map((link) => {

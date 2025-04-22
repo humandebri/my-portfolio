@@ -39,7 +39,7 @@ export default function RootLayout({
           <div className="w-full  z-50 ">
             <TopNav />
           </div>
-          <div className="flex-grow p-6 overflow-y-auto">{children}</div>
+          <div className="flex-grow overflow-y-auto">{children}</div>
         </div>
       </body>
     </html>
