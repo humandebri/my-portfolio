@@ -10,9 +10,13 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ['var(--font-montserrat)', 'sans-serif'], // フォールバックフォントも追加
-        inter: ['var(--font-inter)'],
-        'shippori-mincho': ['var(--font-shippori-mincho)', 'serif'],
+        // montserrat: ['var(--font-montserrat)', 'sans-serif'], // フォールバックフォントも追加
+        // 'shippori-mincho': ['var(--font-shippori-mincho)', 'serif'],
+        sans: [
+          'var(--font-montserrat)',
+          'var(--font-shippori-mincho)',
+          'sans-serif'
+        ],
         // 他のフォントを追加
       },
     },

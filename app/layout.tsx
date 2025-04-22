@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import { inter } from '@/app/ui/fonts';
 import TopNav from '@/app/ui/topnav';
-import css from "styled-jsx/css";
-import { Shippori_Mincho } from 'next/font/google'
+import {Shippori_Mincho , Montserrat} from 'next/font/google'
 
-import { Montserrat } from 'next/font/google'
 
 const montserrat = Montserrat({ 
   subsets: ['latin'],
@@ -20,6 +17,7 @@ const shipporiMincho = Shippori_Mincho({
   display: 'swap',
   variable: '--font-shippori-mincho',
 })
+
 export const metadata: Metadata = {
   title: {
     template: '%s | Hude\'s Portfolio',
@@ -35,8 +33,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja" className={` ${montserrat.variable}`}>
-      <body className="font-montserrat">
+    <html lang="ja" className={`${montserrat.variable} ${shipporiMincho.variable}`}>
+      <body className={`${montserrat.className} antialiased`}>
         <div className="flex flex-col overflow-hidden min-h-screen w-full bg-gray-200">
           <div className="w-full  z-50 ">
             <TopNav />

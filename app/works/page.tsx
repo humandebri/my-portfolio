@@ -58,7 +58,7 @@ function Component({
           <h3 className="font-medium">{explain}</h3>
           <GitHubIconLink repoUrl={repoUrl} />
         </div>
-        <h1>使用技術 : {tech}</h1>
+        <h1 className="font-shippori-mincho">使用技術 : {tech}</h1>
       </div>
     </div>
   );
@@ -69,8 +69,6 @@ export default function Page() {
   return (
     
     <div className="flex flex-col">
-      <h1 className="font-montserrat text-4xl">This is Montserrat!</h1>
-
       <h1 className="px-4 text-2xl">Works Page</h1>
       <p className="mt-4 px-4 flex">Allow me to present the projects I have created to date.</p>
 
