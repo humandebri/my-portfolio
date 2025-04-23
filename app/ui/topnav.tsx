@@ -25,7 +25,7 @@ export default function TopNav() {
   const pathname = usePathname();
   return (
 
-    <div className="w-full bg-gray-100 shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
+    <div className="w-full  shadow-[rgba(0,_0,_0,_0.25)_0px_25px_50px_-12px]">
       <div className="mx-auto h-12 max-w-6xl">
         <ul className="relative mx-12 flex h-full flex-row items-center justify-between text-[16px] font-medium sm:text-[18px]">
 
