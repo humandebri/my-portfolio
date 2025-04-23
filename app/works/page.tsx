@@ -106,7 +106,7 @@ export default function Page() {
         />
 
         <Component 
-        cardUrl = "https://github.com/humandebri/novel_evaluation"
+        cardUrl = "https://hude-portfolio.vercel.app"
         thumb = "/images/hude_pic.png"
         bg_image = "/images/hude_image.png"
         explain = "Hude's Protfolio"
