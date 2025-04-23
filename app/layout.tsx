@@ -23,7 +23,12 @@ export const metadata: Metadata = {
     template: '%s | Hude\'s Portfolio',
     default: 'Hude\'s Portfolio',
   },
-  description: 'The official hude Portfolio built with App Router.',
+  description: 'The official hude Portfolio built with Nextjs.',
+  openGraph: {
+    title: 'Hude\'s Portfolio',
+    images: ['/images/hude_image.png'],
+  }
+
   // metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 };
 
