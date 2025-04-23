@@ -1,16 +1,14 @@
 import Link from 'next/link';
 
-
-
 export default function Home() {
   return (
     <div className="h-[calc(100vh-48px)] overflow-y-scroll snap-y snap-mandatory scroll-smooth">
       <section className="h-[calc(100vh-48px)] snap-start flex flex-col justify-center px-4 max-w-3xl mx-auto">
         <h1 className="text-5xl mb-6">About this site</h1>
         <div className="space-y-4">
-          <p>Hello, I'm hude, an engineer.</p>
+          <p>Hello, I&apos;m hude, an engineer.</p>
           <p>This is my portfolio site.</p>
-          <p>Here I've compiled the projects I've worked on and the skills I've acquired.</p>
+          <p>Here I&apos;ve compiled the projects I&apos;ve worked on and the skills I&apos;ve acquired.</p>
           <p>I created this site because I wanted you to get to know me better.</p>
           <p>I hope you enjoy exploring my work and my journey as an engineer.</p>
         </div>
