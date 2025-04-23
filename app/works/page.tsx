@@ -57,9 +57,9 @@ function Component({
         <div className="absolute left-0 transform -rotate-90 origin-bottom-left -my-7">
           使用技術 : {tech}
         </div>
-      <div className='flex px-4  mt-4  flex-col space-y-2 max-w-[250px]'>
+      <div className='flex px-4  mt-2  flex-col space-y-2 max-w-[250px]'>
         <div className="flex items-center justify-between">
-          <h3 className="font-medium py-3">{explain}</h3>
+          <h3 className="font-medium">{explain}</h3>
           <GitHubIconLink repoUrl={repoUrl} />
         </div>
         
@@ -73,10 +73,8 @@ export default function Page() {
   return (
     
     <div className="flex flex-col">
-      <h1 className="px-4 text-2xl">Works Page</h1>
-      <p className="mt-4 px-4 flex">Allow me to present the projects I have created to date.</p>
 
-      <div className="flex flex-row flex-wrap gap-6 my-10 mx-4 justify-center  space-x-15">
+      <div className="flex flex-row flex-wrap gap-6 my-10 mx-4 justify-center  space-x-15 pt-20">
 
 
         <Component 
@@ -98,7 +96,7 @@ export default function Page() {
         />
 
         <Component 
-        cardUrl = "https://nextjs-dashboard-j1v4lkjp4-hudes-projects-f6d8e97d.vercel.app/"
+        cardUrl = "https://nextjs-dashboard-nu-lac-35.vercel.app/"
         thumb = "/images/nextjs_pic.png"
         bg_image = "/images/nextjs_image.png"
         explain = "Nextjs Dashboard"
@@ -110,9 +108,9 @@ export default function Page() {
         cardUrl = "https://github.com/humandebri/novel_evaluation"
         thumb = "/images/kakuyomu_pic.png"
         bg_image = "/images/kakuyomu_image.png"
-        explain = "Web小説評価システム"
-        repoUrl="https://github.com/humandebri/novel_evaluation"
-        tech = "Python,LLM"
+        explain = "Hude's Protfolio"
+        repoUrl="https://github.com/humandebri/my-portfolio"
+        tech = "Nextjs,React,TS"
         />
 
         <Component 

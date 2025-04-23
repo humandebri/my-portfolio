@@ -35,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="ja" className={`${montserrat.variable} ${shipporiMincho.variable}`}>
       <body className={`${montserrat.className} antialiased`}>
-        <div className="flex flex-col overflow-hidden min-h-screen w-full bg-gray-200">
+        <div className="flex flex-col min-h-screen h-full bg-gray-200">
           <div className="w-full  z-50 ">
             <TopNav />
           </div>
