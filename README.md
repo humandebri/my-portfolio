@@ -12,7 +12,6 @@ Next.jsで構築したシンプルで洗練されたポートフォリオサイ�
 - スナップスクロールによるセクション遷移
 - お問い合わせフォーム（nodemailerを使用）
 - 作品の紹介ページ
-- ダークモード対応
 
 ## 技術スタック
 
@@ -22,7 +21,6 @@ Next.jsで構築したシンプルで洗練されたポートフォリオサイ�
 - **UI**: React 19, HeroIcons, React Icons
 - **フォント**: Google Fonts (Shippori Mincho, Montserrat)
 - **メール送信**: Nodemailer
-- **その他**: shadcn/ui コンポーネント
 
 ## 始め方
 
