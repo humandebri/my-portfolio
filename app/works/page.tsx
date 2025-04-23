@@ -28,7 +28,7 @@ function Component({
   }){
 
   return(
-      
+    <div className='px-10'>  
       <div className='relative mt-6 group/card1'>
         
         <Link
@@ -65,6 +65,7 @@ function Component({
         
       </div>
     </div>
+    </div>
   );
 }
 
@@ -74,7 +75,7 @@ export default function Page() {
     
     <div className="flex flex-col">
 
-      <div className="flex flex-row flex-wrap gap-6 my-10 mx-4 justify-center  space-x-15 pt-20">
+      <div className="flex flex-row flex-wrap gap-6 my-10 mx-4 justify-center  pt-20">
 
 
         <Component 
@@ -106,21 +107,14 @@ export default function Page() {
 
         <Component 
         cardUrl = "https://github.com/humandebri/novel_evaluation"
-        thumb = "/images/kakuyomu_pic.png"
-        bg_image = "/images/kakuyomu_image.png"
+        thumb = "/images/hude_pic.png"
+        bg_image = "/images/hude_image.png"
         explain = "Hude's Protfolio"
         repoUrl="https://github.com/humandebri/my-portfolio"
         tech = "Nextjs,React,TS"
         />
 
-        <Component 
-        cardUrl = "https://github.com/humandebri/novel_evaluation"
-        thumb = "/images/kakuyomu_pic.png"
-        bg_image = "/images/kakuyomu_image.png"
-        explain = "web小説評価システム"
-        repoUrl="https://github.com/humandebri/novel_evaluation"
-        tech = "Python,LLM"
-        />
+        
       </div>
     </div>
     
