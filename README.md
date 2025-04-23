@@ -1,10 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hude's Portfolio
 
-## Getting Started
+Next.jsで構築したシンプルで洗練されたポートフォリオサイトです。
 
-First, run the development server:
+## 概要
+
+このプロジェクトは、Next.jsとTailwind CSSを使用した個人ポートフォリオサイトです。建築からWeb開発への転身を経たHudeの経歴やスキル、作品を紹介しています。
+
+## 機能
+
+- レスポンシブデザイン
+- スナップスクロールによるセクション遷移
+- お問い合わせフォーム（nodemailerを使用）
+- 作品の紹介ページ
+- ダークモード対応
+
+## 技術スタック
+
+- **フレームワーク**: Next.js 15
+- **言語**: TypeScript, JavaScript
+- **スタイリング**: TailwindCSS 4
+- **UI**: React 19, HeroIcons, React Icons
+- **フォント**: Google Fonts (Shippori Mincho, Montserrat)
+- **メール送信**: Nodemailer
+- **その他**: shadcn/ui コンポーネント
+
+## 始め方
 
 ```bash
+# リポジトリをクローン
+git clone https://github.com/yourusername/my-portfolio.git
+
+# ディレクトリに移動
+cd my-portfolio
+
+# 依存関係のインストール
+npm install
+# or
+yarn
+# or
+pnpm install
+# or
+bun install
+
+# 開発サーバーの起動
 npm run dev
 # or
 yarn dev
@@ -14,23 +52,47 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで [http://localhost:3000](http://localhost:3000) を開くとサイトが表示されます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 環境変数の設定
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+お問い合わせフォームを機能させるには、`.env.local` ファイルをプロジェクトのルートに作成し、以下の環境変数を設定してください：
 
-## Learn More
+```
+MAIL_USER=あなたのメールアドレス
+MAIL_PASS=あなたのアプリパスワード
+```
 
-To learn more about Next.js, take a look at the following resources:
+## デプロイ
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+このプロジェクトは Vercel にデプロイすることをお勧めします。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) から簡単にデプロイできます。
 
-## Deploy on Vercel
+詳細は [Next.js デプロイメントドキュメント](https://nextjs.org/docs/app/building-your-application/deploying) を参照してください。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## プロジェクト構造
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+my-portfolio/
+├── app/               # Next.js アプリディレクトリ
+│   ├── api/           # API ルート
+│   │   └── contact/   # お問い合わせフォーム API
+│   ├── contact/       # お問い合わせページ
+│   ├── profile/       # プロフィールページ
+│   ├── works/         # 作品紹介ページ
+│   ├── ui/            # UI コンポーネント
+│   ├── globals.css    # グローバルスタイル
+│   ├── layout.tsx     # レイアウトコンポーネント
+│   └── page.tsx       # ホームページ
+├── components/        # 再利用可能なコンポーネント
+│   └── ui/            # UI コンポーネント
+├── lib/               # ユーティリティ関数
+├── public/            # 静的アセット
+│   └── images/        # 画像
+└── ...                # 設定ファイルなど
+```
+
+## ライセンス
+
+このプロジェクトは MIT ライセンスの下で公開されています。

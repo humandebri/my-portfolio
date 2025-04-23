@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     template: '%s | Hude\'s Portfolio',
     default: 'Hude\'s Portfolio',
   },
-  description: 'The official hude Dashboard built with App Router.',
+  description: 'The official hude Portfolio built with App Router.',
   // metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
 };
 
